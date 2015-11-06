@@ -2,7 +2,6 @@ language: ruby
 rvm:
   - 1.8.7
   - 1.9.2
-  
-shippable_retry: 'if [ $i -eq 3 ]; then echo "done"; else foobar$i; fi'
+install: shippable_retry: 'if [ $i -eq 3 ]; then echo "done"; else foobar$i; fi'
   
 script: true
