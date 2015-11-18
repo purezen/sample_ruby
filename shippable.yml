@@ -1,13 +1,6 @@
 language: ruby
 rvm:
   - 2.0.0
-  - 2.1.0
-
-matrix:
-  include:
-    - rvm: 2.0.0
-      gemfile: gemfiles/Gemfile.rails-3.0.x
-      env: ISOLATED=false
 
 install: shippable_retry 'if [ $i -eq 3 ]; then echo "done"; else foobar$i; fi'
   
